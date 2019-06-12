@@ -8,6 +8,9 @@
 ## Setup
 
 - Clone the repository
+  `git clone git@github.com:spsjvc/testing-laravel-workshop.git`
+- Enter into the directory
+  `cd testing-laravel-workshop`
 - Run docker containers in detached mode
   `docker-compose up -d`
 - Install project dependencies via composer
