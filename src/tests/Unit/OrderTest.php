@@ -27,9 +27,6 @@ class OrderTest extends TestCase
         //
         // 💡 HINT:
         // Use the `assertEquals` method to make the assertion.
-        //
-        //
-        // https://phpunit.de/manual/6.5/en/appendixes.assertions.html
     }
 
     /** @test */
