@@ -15,6 +15,13 @@
 - Copy content from .env.example to .env
   `cp ./src/.env.example ./src/.env`
 
+## Creating tests
+
+- Create a unit test
+  `docker exec -it tlw-laravel php artisan make:test UserTest --unit`
+- Create a feature test
+  `docker exec -it tlw-laravel php artisan make:test UserTest`
+
 ## Running tests
 
 - Run all tests
