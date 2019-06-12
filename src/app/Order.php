@@ -14,4 +14,9 @@ class Order extends Model
     {
         return $this->product_price * $this->quantity;
     }
+
+    public function getTotalPriceWithStudentDiscountAttribute()
+    {
+        return $this->total_price * 0.85;
+    }
 }

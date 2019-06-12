@@ -31,4 +31,14 @@ class OrderTest extends TestCase
         //
         // https://phpunit.de/manual/6.5/en/appendixes.assertions.html
     }
+
+    /** @test */
+    public function can_get_total_price_with_student_discount()
+    {
+        // Arrange
+
+        // Act
+
+        // Assert
+    }
 }
