@@ -51,4 +51,13 @@ class TemperatureServiceTest extends TestCase
         // ✏️ TODO:
         // Make an assertion that the retrieved temperature is as expected.
     }
+
+    public function can_get_average_night_temperature()
+    {
+        // Arrange
+
+        // Act
+
+        // Assert
+    }
 }

@@ -27,6 +27,18 @@ class TemperatureService
         );
     }
 
+    public function getAverageNightTemperature()
+    {
+        $nightHours = [0, 1, 2, 3, 4, 5, 6];
+        $temperatureSum = 0;
+
+        foreach ($nightHours as $hour) {
+            $temperatureSum += $this->weatherService->getTemperatureByHour($hour);
+        }
+
+        return $temperatureSum / count($nightHours);
+    }
+
     public function toCelsius($fahrenheit)
     {
         return ($fahrenheit - 32) * 0.55;
