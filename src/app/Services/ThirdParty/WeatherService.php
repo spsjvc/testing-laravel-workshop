@@ -8,4 +8,9 @@ class WeatherService
     {
         return random_int(50, 100);
     }
+
+    public function getTemperatureByHour($hour)
+    {
+        return random_int(50, 100);
+    }
 }

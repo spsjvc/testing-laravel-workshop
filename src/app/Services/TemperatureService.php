@@ -15,7 +15,20 @@ class TemperatureService
 
     public function getTemperature()
     {
-        $temperatureInFahrenheit = $this->weatherService->getTemperature();
-        return ($temperatureInFahrenheit - 32) * 0.55;
+        return $this->toCelsius(
+            $this->weatherService->getTemperature()
+        );
+    }
+
+    public function getTemperatureByHour($hour)
+    {
+        return $this->toCelsius(
+            $this->weatherService->getTemperatureByHour($hour)
+        );
+    }
+
+    public function toCelsius($fahrenheit)
+    {
+        return ($fahrenheit - 32) * 0.55;
     }
 }
